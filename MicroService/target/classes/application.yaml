@@ -1,0 +1,24 @@
+server:
+  port: 8080
+  address: localhost
+
+#logging:
+#  level:
+#    root: debug
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: Mm@123456
+    url: jdbc:mysql://localhost:3306/Test
+  jpa:
+    database: mysql
+    show-sql: true
+    database-platform: org.hibernate.dialect.MySQLDialect
+    hibernate:
+      ddl-auto: update
+    data:
+      jpa:
+        repositories:
+          enabled: true
